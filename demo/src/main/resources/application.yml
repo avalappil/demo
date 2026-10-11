@@ -1,0 +1,25 @@
+
+spring:
+  application:
+    name: tierc-demo
+  cloud:
+    config:
+      enabled: false
+    discovery:
+      enabled: false
+
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+  port: 8101  
+  
+logging:
+  file:
+    name: /tmp/logs/tierc-demo.log
+    path: /tmp
+    
+management:
+  endpoint:
+    health:
+      show-details: always
